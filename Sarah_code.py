@@ -3,7 +3,6 @@ def recipe_search(ingredient, app_id, app_key):
     # Fetching data from Edamam API
     result = requests.get('https://api.edamam.com/search?q={}&app_id={}&app_key={}'.format(ingredient, app_id, app_key))
     # Parsing the JSON response
-
     data = result.json()
     return data['hits']
 
@@ -24,13 +23,20 @@ def run():
     # Ask the user to enter an ingredient
     ingredient = input('Enter an ingredient: ')
 
+    meal_type_necessary = input("Is the meal type important to you? y or n:")
+    if meal_type_necessary == "y":
+        meal_type = input("Please choose between the options of breakfast, lunch or dinner: ")
+      #  if results["mealType"] == meal_type
+
+
     # Call the recipe search function with user-provided API credentials
-    results = recipe_search(ingredient, app_id, app_key)
-    #
+   # else:
+        results = recipe_search(ingredient, app_id, app_key)
 
     # Save the recipes to a file
     if results:
-        save_to_file(results)
+        print(results[1]) # + "\n"
+        save_to_file(results["recipe"]["calories"])
         print("Recipes saved to 'recipes.txt' file.")
     else:
         print("No recipes found.")
