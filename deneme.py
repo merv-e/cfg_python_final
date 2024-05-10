@@ -45,3 +45,30 @@ countries={"Ghana": "Accra", "China": "Beijing"}
 del countries["China"]
 print(countries)
 '''
+
+
+
+# for loop in a variable
+''' 
+randomNum = [1, 2, 5, 85, 43, 0, 101]
+people = ["Merve", "Orhan", "Mualla", "Orkun", "Willy"]
+
+# lower the cases and loops through the people list :)
+flattened = [flattenedNames.lower() for flattenedNames in people]
+
+# compare the loops (the one above and the one below) 
+
+for flattenedNames in people:
+    flattenedNames.lower()
+    # print(flattenedNames) # when we call flattenedNames in the left line it doesn't lower the cases for some reason.
+    print(flattenedNames.lower())  # this way it works and it lowers the cases.
+
+# print(flattened)
+'''
+
+
+# learn "any" W3Schools: https://www.w3schools.com/python/ref_func_any.asp
+
+# if any
+
+
