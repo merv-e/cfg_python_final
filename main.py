@@ -9,58 +9,58 @@ def recipe_search(ingredient):  # ,app_id, app_key
     if result.status_code == 200:
         data = result.json()
         return data['hits']
+    elif result.status_code == 404:
+        print("Failed to fetch recipes!! Status code:", result.status_code)
+        return None
+    elif result.status_code == 400:
+        print("Something went wrong! Status code:", result.status_code)
+        return None
     else:
         print("Something went wrong!")
-    '''
-        elif result.status_code == 404:
-            print("Failed to fetch recipes. Status code:", result.status_code)
-            return []
-        elif result.status_code == 400:
-            print("Something went wrong. Status code:", result.status_code)
-            return []
-    '''
+
 
 def run():
     ingredient = input('Enter an ingredient: ')
     results = recipe_search(ingredient)
 
-    has_allergy = input("Do you have any allergies? Please answer with a 'yes' with 'y' or 'no' with 'n': ")
+    # Exit the function if the status code is something else than 200
+    if results is None:
+        return
+
+    has_allergy = input("Do you have any allergies? Please respond with 'yes' (y) or 'no' (n): ")
 
     if has_allergy == "y":
-        allergy = input("What are you allergic of? Please write down: ")
-        for result in results:
-           recipe = result["recipe"]
-           try:
-               if recipe["ingredientLines"].index(allergy):
-                   # TODO-1: filter the recipes that the user is not allergic of.
-                   print("index of the allergen:", recipe["ingredientLines"].index(ingredient))
-                   index_of = recipe["ingredientLines"].index(ingredient)
-                   recipe["ingredientLines"].index(ingredient).pop(index_of)
-                   print(index_of)
+        allergy = input("What are you allergic to? Please specify it below: ").lower()
+        filtered_results = []
 
-                   # TODO-2: save it to a file for future use.
-           except ValueError:
-                #  print("Good to go! That allergen is not listed!")
-                # print(recipe)
-                print("Todo bien!")
+        for result in results:
+            recipe = result["recipe"]
+
+            # Flatten and convert all ingredients to lowercase for comparison
+            ingredients = [ing.lower() for ing in recipe["ingredientLines"]]
+            print("ingredients: ", ingredients)
+
+            # Filter out recipes that contain the allergen
+            if not any(allergy in ingredient for ingredient in ingredients):
+                filtered_results.append(recipe)
+
+        print("Number of original recipes:", len(results))
+        print("Number of recipes after filtering:", len(filtered_results))
+        print()
+
+        for recipe in filtered_results:
+            print("Recipe:", recipe["label"])
+            print("URL:", recipe["uri"])
+            print("Calories:", round(recipe["calories"], 2))
+            print("Diet Labels:", ', '.join(recipe["dietLabels"]))
+            print()
 
     else:
         for result in results:
-            print(result["recipe"]["label"])
-            print(result["recipe"]["uri"])
-
-
-    # def add_recipe_to_favourites(recipe):
-
+            print("Recipe:", result["recipe"]["label"])
+            print("URL:", result["recipe"]["uri"])
+            print("Calories:", round(result["recipe"]["calories"], 2))
+            print("Diet Labels:", ', '.join(result["recipe"]["dietLabels"]))
+            print()
 
 run()
-
-'''
-# and filter(filter_recipes_by_allergy, allergy)
-
-def filter_recipes_by_allergy(al):
-    if al:
-        return False
-    else:
-        return True
-'''
