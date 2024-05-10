@@ -27,6 +27,7 @@ def run():
     if results is None:
         return
 
+    # Ask user if there is any ingredient that the user might be allergic to
     has_allergy = input("Do you have any allergies? Please respond with 'yes' (y) or 'no' (n): ")
 
     # If the user is allergic to some ingredient
@@ -64,5 +65,9 @@ def run():
             print("Calories:", round(result["recipe"]["calories"], 2))
             print("Diet Labels:", ', '.join(result["recipe"]["dietLabels"]))
             print()
+
+    # Do you have any favourite recipe?
+
+    # Would you like to save a recipe to your favourite recipes?
 
 run()
