@@ -1,6 +1,6 @@
 import requests
 
-def recipe_search(ingredient):  # ,app_id, app_key
+def recipe_search(ingredient):
     app_id = "9a01e4df"
     app_key = "f55aa716d20221d7c0b1a7bd7d721c8c"
 
@@ -16,7 +16,7 @@ def recipe_search(ingredient):  # ,app_id, app_key
         print("Something went wrong! Status code:", result.status_code)
         return None
     else:
-        print("Something went wrong!")
+        print("Status code:", result.status_code)
 
 
 def run():
@@ -29,6 +29,7 @@ def run():
 
     has_allergy = input("Do you have any allergies? Please respond with 'yes' (y) or 'no' (n): ")
 
+    # If the user is allergic to some ingredient
     if has_allergy == "y":
         allergy = input("What are you allergic to? Please specify it below: ").lower()
         filtered_results = []
@@ -36,11 +37,10 @@ def run():
         for result in results:
             recipe = result["recipe"]
 
-            # Flatten and convert all ingredients to lowercase for comparison
+            # Flattening the ingredients to lowercase
             ingredients = [ing.lower() for ing in recipe["ingredientLines"]]
-            print("ingredients: ", ingredients)
 
-            # Filter out recipes that contain the allergen
+            # Filtering the recipes that might contain the allergen
             if not any(allergy in ingredient for ingredient in ingredients):
                 filtered_results.append(recipe)
 
@@ -48,6 +48,7 @@ def run():
         print("Number of recipes after filtering:", len(filtered_results))
         print()
 
+        # Loop through the list of recipes that are filtered not containing the allergen
         for recipe in filtered_results:
             print("Recipe:", recipe["label"])
             print("URL:", recipe["uri"])
@@ -55,6 +56,7 @@ def run():
             print("Diet Labels:", ', '.join(recipe["dietLabels"]))
             print()
 
+    # If the user is NOT allergic to an ingredient
     else:
         for result in results:
             print("Recipe:", result["recipe"]["label"])

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67c54817-0452-4291-9cce-16204add6d9b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deneme.py" beforeDir="false" afterPath="$PROJECT_DIR$/deneme.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +117,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715268256355</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="for loop assigned to a variable.">
+      <option name="closed" value="true" />
+      <created>1715343651276</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715343651276</updated>
+    </task>
+    <task id="LOCAL-00007" summary="filtering results if the user has any allergens.">
+      <option name="closed" value="true" />
+      <created>1715343681238</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715343681238</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,6 +142,8 @@
     <MESSAGE value="Main code is generated." />
     <MESSAGE value="comments are deleted." />
     <MESSAGE value="some more stuff and todos are added." />
-    <option name="LAST_COMMIT_MESSAGE" value="some more stuff and todos are added." />
+    <MESSAGE value="for loop assigned to a variable." />
+    <MESSAGE value="filtering results if the user has any allergens." />
+    <option name="LAST_COMMIT_MESSAGE" value="filtering results if the user has any allergens." />
   </component>
 </project>
