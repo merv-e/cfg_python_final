@@ -6,3 +6,6 @@ Chive Oil,  http://www.edamam.com/ontologies/edamam.owl#recipe_3938d00e5088002ef
 Chive Oil, http://www.edamam.com/ontologies/edamam.owl#recipe_3938d00e5088002ef09f20aed0c5bcc9
 Recipe: Chive Oil From 'Daniel', http://www.edamam.com/ontologies/edamam.owl#recipe_0d751e61809447dd90edef0f6a3ccddd
  Cilantro Oil, https://www.marthastewart.com/1162023/cilantro-oil
+Cilantro Oil, http://www.edamam.com/ontologies/edamam.owl#recipe_706b869dc5e1721a3889b443f1ab97e5
+Cilantro Oil, https://www.marthastewart.com/1162023/cilantro-oil
+Garlic Oil, https://www.marthastewart.com/852369/garlic-oil
