@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c54817-0452-4291-9cce-16204add6d9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/deneme_streamlit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dora_code2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_version.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favourite_recipes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/favourite_recipes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Merve_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/recipes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +52,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Dora_code.executor": "Run",
+    "Python.Dora_code2.executor": "Run",
     "Python.Sarah_code.executor": "Run",
     "Python.deneme.executor": "Run",
+    "Python.final_version.executor": "Run",
     "Python.main.executor": "Run",
     "Python.practice.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -169,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715510598907</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Playing with Streamlit :)">
+      <option name="closed" value="true" />
+      <created>1715513749533</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715513749533</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -184,6 +195,7 @@
     <MESSAGE value="minor changes are made." />
     <MESSAGE value="functionality of adding a recipe to a file, if user wants to is included.&#10;&#10;if user has allergy then the program filters them." />
     <MESSAGE value="Dora's code is also included." />
-    <option name="LAST_COMMIT_MESSAGE" value="Dora's code is also included." />
+    <MESSAGE value="Playing with Streamlit :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Playing with Streamlit :)" />
   </component>
 </project>
