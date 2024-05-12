@@ -43,6 +43,8 @@ def run():
     ingredient = input('Enter an ingredient: ')
     results = recipe_search(ingredient)
 
+    # If recipe_search did not retrieve data successfully
+    # (i.e., results is None due to non-200 status codes or other issues), exit the function.
     if results is None:
         return
 
@@ -55,6 +57,9 @@ def run():
         for result in results:
             recipe = result["recipe"]
             ingredients = [ing.lower() for ing in recipe["ingredientLines"]]
+
+            # Append the recipe to 'filtered_results' if none of the ingredients contain the specified allergen.
+            # This ensures that only recipes safe for the user's dietary restrictions are selected.
             if not any(allergy in ingredient for ingredient in ingredients):
                 filtered_results.append(recipe)
 
