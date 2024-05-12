@@ -1,6 +1,7 @@
 import requests
+# import streamlit as str
 
-
+# str run:
 def recipe_search(ingredient):
     app_id = "9a01e4df"
     app_key = "f55aa716d20221d7c0b1a7bd7d721c8c"
