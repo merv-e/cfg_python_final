@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c54817-0452-4291-9cce-16204add6d9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dora_last_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sarah_final.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_version2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/favourite_recipes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/favourite_recipes.txt" afterDir="false" />
     </list>
@@ -58,6 +57,7 @@
     "Python.Sarah_final.executor": "Run",
     "Python.deneme.executor": "Run",
     "Python.final_version.executor": "Run",
+    "Python.final_version2.executor": "Run",
     "Python.main.executor": "Run",
     "Python.practice.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -198,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715533136181</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="working on the last versions of our program.">
+      <option name="closed" value="true" />
+      <created>1715539198823</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715539198823</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,6 +224,7 @@
     <MESSAGE value="Playing with Streamlit :)" />
     <MESSAGE value="Dorah's 2nd code added.&#10;Dora's and Sarah's codes are merged." />
     <MESSAGE value="All codes are merged." />
-    <option name="LAST_COMMIT_MESSAGE" value="All codes are merged." />
+    <MESSAGE value="working on the last versions of our program." />
+    <option name="LAST_COMMIT_MESSAGE" value="working on the last versions of our program." />
   </component>
 </project>
